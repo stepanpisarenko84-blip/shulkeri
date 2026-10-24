@@ -322,6 +322,6 @@ public class HunterBot {
     }
 
     private static void say(LocalPlayer p, String msg) {
-        p.displayClientMessage(Component.literal(msg), true);
+        Minecraft.getInstance().gui.setOverlayMessage(Component.literal(msg), false);
     }
 }
